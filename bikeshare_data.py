@@ -143,7 +143,7 @@ def time_stats(df, day, month):
     print(f"The least common start hour to travel is {convert_to_12h(least_common_hour)}")
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (round(time.time() - start_time, 2)))
     print('-'*40)
 
 
@@ -168,7 +168,7 @@ def station_stats(df):
     common_start_end_station = df[['Start Station', 'End Station']].mode().loc[0]
     print(f"Most frequent combination of start and end station trips are: {common_start_end_station[0]} and {common_start_end_station[1]}")
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (round(time.time() - start_time, 2)))
     print('-'*40)
 
 def convert_HMS(seconds):
@@ -197,7 +197,7 @@ def trip_duration_stats(df):
     print(f"The mean travel time in bikeshare is: {convert_HMS(mean_time)}")
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (round(time.time() - start_time, 2)))
     print('-'*40)
 
 
@@ -242,7 +242,7 @@ def user_stats(df):
     except KeyError:
         print("\nSorry seems like date of birth is not availabe for applied filter!")
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds." % (round(time.time() - start_time, 2)))
     print('-'*40)
 
 
