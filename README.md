@@ -10,7 +10,10 @@ BikeShare Data
 BikeShare is a program that analyzes data. The major objective is to make it easier to read data from the BikeShare database. Furthermore, the programs execute multiple processes to filter out data and provide it to users in a comprehensible and easy-to-read format. 
 
 ### Files used
-Include the files used
+Below are the data files used in this project:
+- washington.csv
+-newyorkcity.csv
+-chicago.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
