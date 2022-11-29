@@ -171,6 +171,15 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+def convert_HMS(seconds):
+    '''Convert seconds to HMS format
+    returns a formatted string of Hours:Mintues:Seconds'''
+    seconds = seconds % (24 * 3600)
+    hour = seconds // 3600
+    seconds %= 3600
+    minutes = seconds // 60
+    seconds %= 60
+    return "%d:%02d:%02d" % (hour, minutes, seconds)
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
@@ -180,12 +189,12 @@ def trip_duration_stats(df):
 
     # display total travel time
     total_time = df['Trip Duration'].sum()
-    print(f"The total time traveled in bikeshare is: {total_time}")
+    print(f"The total time traveled in bikeshare is: {convert_HMS(total_time)}")
 
 
     # display mean travel time
     mean_time = df['Trip Duration'].mean()
-    print(f"The mean travel time in bikeshare is: {mean_time}")
+    print(f"The mean travel time in bikeshare is: {convert_HMS(mean_time)}")
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
