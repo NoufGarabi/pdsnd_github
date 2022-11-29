@@ -237,8 +237,8 @@ def user_stats(df):
         recent_DOB = df['Birth Year'].max()
         common_DOB = df['Birth Year'].mode()[0]
         print("Date of birth stats are as follows:")
-        print(f"Earlies date of birth: {earliest_DOB}\nMost recent date of birth: {recent_DOB}\n"+
-        f"Most common date of birth: {common_DOB}")
+        print(f"Earlies date of birth: {int(earliest_DOB)}\nMost recent date of birth: {int(recent_DOB)}\n"+
+        f"Most common date of birth: {int(common_DOB)}")
     except KeyError:
         print("\nSorry seems like date of birth is not availabe for applied filter!")
 
