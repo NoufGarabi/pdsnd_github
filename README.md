@@ -12,8 +12,8 @@ BikeShare is a program that analyzes data. The major objective is to make it eas
 ### Files used
 Below are the data files used in this project:
 - washington.csv
--newyorkcity.csv
--chicago.csv
+- newyorkcity.csv
+- chicago.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
