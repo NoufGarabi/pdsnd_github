@@ -7,7 +7,7 @@ BikeShare project was created on 27 Nov as a Udacity assignment.
 BikeShare Data
 
 ### Description
-Describe what your project is about and what it does
+BikeShare is a program that analyzes data. The major objective is to make it easier to read data from the BikeShare database. Furthermore, the programs execute multiple processes to filter out data and provide it to users in a comprehensible and easy-to-read format. 
 
 ### Files used
 Include the files used
